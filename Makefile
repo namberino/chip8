@@ -12,5 +12,5 @@ chip8: $(objects)
 # produce object files
 # $< is the first prereq file
 # $@ is the target name
-obj/%.o: %.c
+obj/%.o: src/%.c
 	$(CC) -c $< $(FLAGS) -o $@
