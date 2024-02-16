@@ -3,12 +3,11 @@ LIBS = -lm -lSDL2
 
 sources = src/main.c src/chip8.c src/periph.c
 objects = obj/main.o obj/chip8.o obj/periph.o
-headers = headers/chip8.h headers/periph.h
 
 all: emulator
 
 # link object files together
-emulator: $(objects) $(headers)
+emulator: $(objects)
 	$(CC) $(FLAGS) $(LIBS) -o $@ $(objects)
 
 # produce object files
