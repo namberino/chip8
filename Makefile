@@ -3,7 +3,7 @@ LIBS  = -lm -lSDL2
 
 sources = main.c chip8.c periph.c
 objects = obj/main.o obj/chip8.o obj/periph.o
-headers = chip8.h periph.h
+headers = headers/chip8.h headers/periph.h
 
 all: emulator
 

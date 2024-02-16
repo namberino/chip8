@@ -2,8 +2,8 @@
 #include <unistd.h>
 #include <errno.h>
 
-#include "chip8.h"
-#include "periph.h"
+#include "headers/chip8.h"
+#include "headers/periph.h"
 
 extern int quit;
 

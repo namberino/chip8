@@ -1,5 +1,5 @@
 // Architecture and logic
-#include "chip8.h"
+#include "headers/chip8.h"
 
 #include <stdio.h>
 #include <stdlib.h>

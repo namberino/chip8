@@ -1,5 +1,5 @@
 // Handles the peripherals (outputs, inputs, etc)
-#include "periph.h"
+#include "headers/periph.h"
 #include <SDL2/SDL.h>
 
 SDL_Window* screen;
