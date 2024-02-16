@@ -2,7 +2,7 @@ FLAGS  = -I include -Wall -Wextra -pedantic -std=c99
 LIBS  = -lm -lSDL2 
 
 sources = main.c chip8.c periph.c
-objects = main.o chip8.o periph.o
+objects = obj/main.o obj/chip8.o obj/periph.o
 headers = chip8.h periph.h
 
 all: emulator
@@ -14,5 +14,5 @@ emulator: $(objects) $(headers)
 # produce object files
 # $< is the first prereq file
 # $@ is the target name
-%.o: %.c
+obj/%.o: %.c
 	$(CC) -c $< $(FLAGS) $(LIBS) -o $@
