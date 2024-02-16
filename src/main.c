@@ -11,7 +11,7 @@ int main(int argc, char** argv)
 {
     if (argc != 2) 
     {
-        perror("Usage: ./emulator <rom_name>.ch8");
+        perror("Usage: ./chip8 <rom_name>.ch8");
         return 1;
     }
 

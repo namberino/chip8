@@ -2,7 +2,7 @@
 
 This was written using C and SDL2
 
-Run `make` to compile and `./emulator <rom_name>.ch8` to run the program
+Run `make` to compile and `./chip8 <rom_name>.ch8` to run the program
 
 ![emulator image](emulator.png)
 
