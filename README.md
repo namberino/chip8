@@ -2,6 +2,8 @@
 
 This was written using C and SDL2
 
+Before compiling, make sure you have [SDL2](https://wiki.libsdl.org/SDL2/Installation) on your system
+
 Run `make` to compile and `./chip8 <rom_name>.ch8` to run the program
 
 ![emulator image](emulator.png)
