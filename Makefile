@@ -3,10 +3,10 @@ FLAGS = -I include -Wall -Wextra -pedantic -std=c99 -lSDL2
 sources = src/main.c src/chip8.c src/periph.c
 objects = obj/main.o obj/chip8.o obj/periph.o
 
-compile: chip8
+compile: bin/chip8
 
 # link object files together
-chip8: $(objects)
+bin/chip8: $(objects)
 	$(CC) $(FLAGS) -o $@ $(objects)
 
 # produce object files
