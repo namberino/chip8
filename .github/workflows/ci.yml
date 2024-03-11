@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Setup tools
+      run: | 
+        sudo apt install gcc
+        
+    - name: Build files
+      run: make
+      
+    - name: Testing
+      run: |
+        chmod +x test.sh
+        ./test.sh
