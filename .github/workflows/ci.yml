@@ -13,6 +13,12 @@ jobs:
     
     - name: Setup tools
       run: sudo apt install -y libsdl2-dev
+
+    - name: Cleanup object files
+      run: rm -rf obj
+
+    - name: Create obj directory
+      run: mkdir obj
         
     - name: Build files
       run: make
