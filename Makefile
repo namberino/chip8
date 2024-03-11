@@ -3,18 +3,14 @@ FLAGS = -I include -Wall -Wextra -pedantic -std=c99 -lSDL2
 sources = src/main.c src/chip8.c src/periph.c
 objects = obj/main.o obj/chip8.o obj/periph.o
 
-# create bin directory if it doesn't exists
-bin/chip8: | bin
-    @:
-
-bin:
-    mkdir -p bin
-
 compile: bin/chip8
 
 # link object files together
-bin/chip8: $(objects)
+bin/chip8: $(objects) | bin
 	$(CC) $(FLAGS) -o $@ $(objects)
+
+bin:
+	mkdir -p bin
 
 # produce object files
 # $< is the first prereq file
