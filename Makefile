@@ -1,4 +1,4 @@
-FLAGS = -I include -L lib -Wall -Wextra -pedantic -std=c99 -lSDL2
+FLAGS = -Wall -Wextra -pedantic -std=c99 `sdl2-config --cflags --libs`
 
 sources = src/chip8.c src/periph.c src/main.c
 objects = obj/chip8.o obj/periph.o obj/main.o
