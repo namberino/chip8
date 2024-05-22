@@ -11,31 +11,28 @@ int main(int argc, char** argv)
 {
     if (argc != 2) 
     {
-        perror("Usage: ./chip8 <rom_name>.ch8");
+        printf("Usage: ./chip8 <rom_name>.ch8\n");
         return 1;
     }
 
-    puts("Initializing CHIP-8 architecture...");
+    printf("Initializing CHIP-8 architecture...\n");
     init_cpu();
-    puts("Done");
 
     char* rom_filename = argv[1];
     printf("Loading rom %s...\n", rom_filename);
 
     int error = load_rom(rom_filename);
-    if(error) 
+    if (error) 
     {
         if (error == -1)
-            perror("Return value of fread() was not equal to rom file size");
+            printf("Return value of fread() was not equal to rom file size\n");
         else
-            perror("Error while loading rom");
+            printf("Error while loading rom\n");
         return 1;
     }
 
-    puts("Rom loading successful");
-
+	printf("Initializing display...\n");
     init_display();
-    puts("Display initialization successful");
 
     while (!quit)
     {

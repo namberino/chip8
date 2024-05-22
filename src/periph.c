@@ -26,7 +26,7 @@ void init_display()
 {
     SDL_Init(SDL_INIT_VIDEO);
 
-    screen = SDL_CreateWindow("Chip-8", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 64 * 8, 32 * 8, 0);
+    screen = SDL_CreateWindow("CHIP-8 Emulator", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, 64 * 8, 32 * 8, 0);
     renderer = SDL_CreateRenderer(screen, -1, SDL_RENDERER_ACCELERATED);
 }
 
