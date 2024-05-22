@@ -16,6 +16,10 @@ Run `make` to compile and `./chip8 <rom_name>.ch8` to run the program
 
 ![emulator image](emulator.png)
 
+# ROMs
+
+You can find the ROMs for testing the program in the [roms](roms) directory
+
 # References:
 - [Cowgod's Chip-8 Technical Reference](http://devernay.free.fr/hacks/chip8/C8TECH10.HTM)
 - [CHIP-8 Wikipedia](https://en.wikipedia.org/wiki/CHIP-8)
